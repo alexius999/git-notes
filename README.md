@@ -1,6 +1,6 @@
 # Установка
 
-Перейти на страницу официального сайта [Git](https://git-scm.com/download/win "Перейти на сайт загрузки")
+Перейти на страницу официального сайта [Git](https://git-scm.com/download/win "Перейти на сайт загрузки").
 Скачать одну из двух версий из категории Standalone Installer (англ. «автономный установщик»). Узнать тип системы Windows можно в настройках.
 Запустить программу установки. Обратить внимание, куда будет установлен Git. По умолчанию C:\Program Files\Git.
 Проверить, что в списке устанавливаемых программ стоит галочка напротив пункта Git Bash Here — это позволит открывать консоль с Git в любой папке.
@@ -112,16 +112,12 @@ git commit -m ‘Мой первый коммит!’
 
 ## Инструкция по регистрации на GitHub
 
-[GitHub](https://github.com/ "Главная страница GitHub")
-В правом верхнем углу главной страницы GitHub нажмите на Sign up (англ. «зарегистрироваться»).
+В правом верхнем углу главной страницы [GitHub](https://github.com/ "Главная страница GitHub") нажмите на Sign up (англ. «зарегистрироваться»).
 
 На экране будут последовательно появляться поля для ввода.
-
-2.1. Введите адрес электронной почты (англ. Enter your email).
-
-2.2. Придумайте пароль (англ. Create a password).
-
-2.3. Введите имя пользователя (англ. Enter a username).
+2.1. Введите адрес электронной почты (англ. Enter your email). 
+2.2. Придумайте пароль (англ. Create a password). 
+2.3. Введите имя пользователя (англ. Enter a username). 
 
 Платформа спросит, хотите ли вы получать на почту рассылку с обновлениями и новостями (англ. Would you like to receive product updates and announcements via email?). Введите y, если хотите получать рассылку, или n, если не хотите.
 Нажмите кнопку Continue (англ. «продолжить»).
@@ -173,8 +169,8 @@ ls -la .ssh/ # вывели список созданных ключей
 ssh-keygen -t ed25519 -C "электронная почта, к которой привязан ваш аккаунт на GitHub" 
 Generating public/private rsa key pair. # сгенерированы публичный и приватный ключи
 Укажите место хранения ключей. Простой вариант — сделать домашний каталог пользователя путём по умолчанию. Для этого нажмите Enter.
-> Enter passphrase (empty for no passphrase): [Type a passphrase]
-> Enter same passphrase again: [Type passphrase again] 
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again] 
 Программа запросит кодовую фразу (англ. passphrase) для доступа к SSH-ключу. Вы можете оставить поле пустым. Для этого нажмите Enter, а затем ещё раз Enter для подтверждения.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
