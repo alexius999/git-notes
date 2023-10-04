@@ -38,7 +38,7 @@
 |					|в текущей папке 							| make directory			|
 
 
-touch index.html style.css script.js - если нужно создать сразу несколько файлов, можно напечатать их имена в одну строку через пробел
+>touch index.html style.css script.js - если нужно создать сразу несколько файлов, можно напечатать их имена в одну строку через пробел
 
 ## Копирование и перемещение
 
@@ -69,14 +69,11 @@ touch index.html style.css script.js - если нужно создать сра
 Чтобы не вводить название файла или папки полностью, можно набрать первые символы имени и дважды нажать Tab. Если файл или папка есть в текущей директории, командная строка допишет путь сама.
 Например, вы находитесь в папке dev. Начните вводить cd first и дважды нажмите Tab. Если папка first-project есть внутри dev, командная строка автоматически подставит её имя. Останется только нажать Enter.
 
-git version
-git config --global user.name "User Namovich" 
-имя или ник нужно написать латиницей и в кавычках
-git config --global user.email username@yandex.ru
-здесь нужно указать свой настоящий email 
-$ git config --global user.name "alexius999"
-Admin@DESKTOP-03C4TN8 MINGW64 ~
-$ git config --global user.email "alexey.kosikov@gmail.com"
+git version - узнать версию установленной Git
+git config --global user.name "User Namovich" - имя или ник нужно написать латиницей и в кавычках
+git config --global user.email username@mail.com - здесь нужно указать свой настоящий email 
+$ git config --global user.name "UserName"
+$ git config --global user.email "UserName@mail.com"
 cat ~/.gitconfig # Все глобальные настройки Git хранит в файле .gitconfig в домашней директории. Команда запишет в этот файл указанные имя и почту. Чтобы убедиться в этом, можно вызвать команду для чтения файлов.
 git config --list
 
@@ -247,16 +244,16 @@ Hi %ВАШ_АККАУНТ%! You've successfully authenticated, but GitHub does n
 ## Привязать удалённый репозиторий к локальному — git remote add
 
 Перейдите на страницу удалённого репозитория, выберите тип SSH и скопируйте URL. Кнопка справа позволит сделать это мгновенно.
-git@github.com:alexius999/first-project.git
-git remote add origin git@github.com:alexius999/first-project.git
+git@github.com:UserName/project.git
+git remote add origin git@github.com:UserName/project.git
 
 В командную строку нельзя вставить текст из буфера обмена с помощью привычного сочетания Ctrl+V. На Windows (в Git Bash) и Linux для этого используется сочетание Ctrl+Shift+V, а на macOS — Cmd+V.
 Также можно нажать правую кнопку мыши и выбрать пункт Paste (англ. «вставить») в выпадающем меню.
 origin (англ. «источник») — стандартный псевдоним, с помощью которого можно обращаться к главному удалённому репозиторию (обычно такой репозиторий один). Это значительно упрощает работу.
 Убедиться, что репозитории связаны, — git remote -v
 git remote -v
-origin git@github.com:alexius999/first-project. (fetch)
-origin git@github.com:alexius999/first-project. (push)
+origin git@github.com:UserName/project. (fetch)
+origin git@github.com:UserName/project. (push)
 
 В выводе вы должны увидеть две строчки, аналогичные тем, что показаны выше.
 Флаг -v — короткая форма флага --verbose (англ. «подробный»). Он позволяет показать больше информации в выводе.
@@ -281,15 +278,15 @@ pull.rebase=false
 credential.helper=manager
 credential.https://dev.azure.com.usehttppath=true
 init.defaultbranch=master
-user.name=alexius999
-user.email=alexey.kosikov@gmail.com
+user.name=UserName
+user.email=UserName@mail.com
 core.repositoryformatversion=0
 core.filemode=false
 core.bare=false
 core.logallrefupdates=true
 core.symlinks=false
 core.ignorecase=true
-remote.origin.url=git@github.com:alexius999/first-project.git
+remote.origin.url=git@github.com:UserName/project.git
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 
 git push -u origin master
@@ -302,7 +299,7 @@ Compressing objects: 100% (10/10), done.
 Writing objects: 100% (14/14), 1.27 KiB | 1.27 MiB/s, done.
 Total 14 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), done.
-To github.com:alexius999/first-project.git
+To github.com:UserName/project.git
  * [new branch]      master -> master
 branch 'master' set up to track 'origin/master'.
 
