@@ -558,6 +558,15 @@ staging. Чтобы добавить в staging последнюю версию,
  - staged (Changes to be committed в выводе git status);
  - modified (Changes not staged for commit);
  - untracked (Untracked files).
+ 
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
 
 ## Подготавливаем репозиторий
 
